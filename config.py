@@ -6,8 +6,8 @@ INITIAL_RATING = 1000
 
 # Google Sheets info for reading input data
 GSHEETS_CREDENTIALS_FILE = "./google-credentials.json"
-SPREADSHEET_ID = "1E26H4nE8C25khHAiRJ9vNWk4GtN0SB56Kd8z6SESEh0"
-DATA_SHEET_ID = 626646746
+SPREADSHEET_ID = "1CXQVBTvWmkon5vkuAGdPVSKs373ZqK3_XTqi3dJF7dM"
+DATA_SHEET_ID = pokerweb
 DUMMY_PLAYER_NAME = "_dummy_"
 
 # dashboard settings
