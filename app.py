@@ -120,16 +120,16 @@ def scenario_generator_tab():
         dcc.Markdown(className="text-muted",
                      children=f"""
                      *K* 한판에 얼마나 많은 elo 레이팅 포인트를 얻거나 잃을지 결정합니다. 값이 큰
-                     *K* 각 게임이 끝난 후 더 많은 elo 레이팅 값을 변하게 합니다. 해당 값이 표준 elo 파라미터입니다.
+                     *K* 각 게임이 끝난 후 더 많은 elo 레이팅 값을 변하게 합니다. 이 값은 표준 elo 파라미터입니다.
                      (default = {config.DEFAULT_K_VALUE})
                      """),
 
         dcc.Markdown(className="text-muted",
                      children=f"""
-                     *D* controls the estimated win probability of each player. *D* value of 400 means
-                     that a player with a 200-point Elo advantage wins ~75% of the time in a head-to-head
-                     matchup. *D* value of 200 means that player wins ~90% of the time. This is a standard
-                     Elo parameter. (default = {config.DEFAULT_D_VALUE})
+                     *D* 는 각 플레이어의 예상 승리 확률을 제어합니다. *D* 값 400은
+                     200점 elo 우위에 있는 선수가 정면 대결에서 ~75%의 비율로 승리한다는 것을
+                     뜻합니다. *D* 값 200 은 그 플레이어가 90%의 비율로 승리한다는 것을 뜻합니다. 이 값은
+                     Elo 파라미터입니다. (default = {config.DEFAULT_D_VALUE})
                      """),
 
         dcc.Markdown(className="text-muted",
