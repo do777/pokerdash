@@ -75,7 +75,7 @@ def current_elo_tab():
                 dbc.Spinner(id="current-ratings-table")
             ]),
             dbc.Col(width=7, children=[
-                section_header("Elo History"),
+                section_header("Elo 변동"),
                 dbc.Spinner(children=dcc.Graph(id="main-chart")),
                 dbc.Col(width=6, children=[
                     dbc.Row(children=[
@@ -104,7 +104,7 @@ def current_elo_tab():
 
         dbc.Row(children=[
             dbc.Col(children=[
-                section_header("Game Results"),
+                section_header("게임 결과 모음"),
                 dbc.Spinner(id="game-results-table")
             ])
         ])
@@ -214,7 +214,7 @@ def win_probability_tab():
     return html.Div(children=[
         dbc.Row(children=[
             dbc.Col(width=3, children=[
-                section_header("Player List"),
+                section_header("플레이어 명"),
                 dcc.Markdown(className="text-muted",
                              children="어떤 플레이어를 참여시킬건지 선택해주세요."),
                 dbc.Checklist(id="player-options", value=[]),
