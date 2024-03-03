@@ -191,7 +191,7 @@ def scenario_generator_tab():
         html.Br(),
         html.Hr(),
 
-        section_header("Editable Game Result History"),
+        section_header("게임 결과 기록 편집기"),
 
         dbc.Row(justify="center", children=[
             dbc.Col(children=[
@@ -219,7 +219,7 @@ def win_probability_tab():
                              children="어떤 플레이어를 참여시킬건지 선택해주세요."),
                 dbc.Checklist(id="player-options", value=[]),
                 html.Br(),
-                dbc.Button(id="clear-button", children="Clear selections", color="primary")
+                dbc.Button(id="clear-button", children="선택 초기화 하", color="primary")
             ]),
 
             dbc.Col(width=9, children=[
@@ -254,9 +254,9 @@ app.layout = dbc.Container(children=[
     ]),
 
     dcc.Tabs(id="tab-name", value="tab-1", children=[
-        dcc.Tab(label="Current Elo Ratings", value="tab-1"),
-        dcc.Tab(label="Scenario Generator", value="tab-2"),
-        dcc.Tab(label="Win Probabilities", value="tab-3"),
+        dcc.Tab(label="현재 elo rating 순위", value="tab-1"),
+        dcc.Tab(label="순위 생성기", value="tab-2"),
+        dcc.Tab(label="승리 확률 계산기", value="tab-3"),
     ]),
 
     html.Br(),
