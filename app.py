@@ -134,11 +134,11 @@ def scenario_generator_tab():
 
         dcc.Markdown(className="text-muted",
                      children=f"""
-                     The score function base value controls how much more valuable it is to finish in a
-                     high place. Larger value means greater reward for finishing near the top. A value of
-                     *p* means that 1st place is worth approximately *p* times as much as 2nd, which is
-                     worth *p* times 3rd, and so on. This is a parameter I made up to generalize Elo to
-                     multiplayer games. (default = {config.DEFAULT_SCORING_FUNCTION_BASE})
+                     score function base 값은 높은 등수를 하는것을 얼마나 더 가치 있게 할지를
+                     결정합니다. 큰 값은 상위권 플레이어에게 더 높은 보상을 하는 것을 의미합니다.
+                     *p* 값 1등의 가치가 대략 *p* 배 2등보다 가치 있고,
+                     3등보다는 *p* 배 더 가치 있다는걸 의미합니다. and so on. 이 parameter 는 제작자가 elo를 멀티플레이에 적용하기 위해
+                     만든 값입니다. (default = {config.DEFAULT_SCORING_FUNCTION_BASE})
                      """),
 
         dbc.Row(justify="center", align="center", children=[
