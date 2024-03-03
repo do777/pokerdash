@@ -55,9 +55,9 @@ def header():
 def footer():
     return html.Div([
         html.Hr(),
-        html.Small("*We claim no affiliation with Red Dog, Miller Brewing Company, or "
-                   "Plank Road Brewing, but we would happily promote for you if you in "
-                   "exchange for free beer :)",
+        html.Small("*플레이어 제군, 포커의 세계에 온 것을 환영한다 "
+                   "알고 계셨나요? "
+                   "문래 포커 클럽은 2024년 2월 19일에 시작했습니다:)",
                    className="text-muted font-italic"),
         html.Hr(),
     ])
