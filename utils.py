@@ -95,7 +95,7 @@ def prep_current_ratings_for_dash(
         .rename(columns={
             "rank": "Rank",
             "player_id": "Name",
-            "n_games": "Games played",
+            "n_games": "Games Played",
             "n_wins": "Wins",
             "rating": "Elo Rating",
         })
