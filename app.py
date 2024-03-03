@@ -55,7 +55,7 @@ def header():
 def footer():
     return html.Div([
         html.Hr(),
-        html.Small("*플레이어 제군, 포커의 세계에 온 것을 환영한다 "
+        html.Small("*플레이어 제군, 포커의 세계에 온 것을 환영한다. "
                    "알고 계셨나요? "
                    "문래 포커 클럽은 2024년 2월 19일에 시작했습니다:)",
                    className="text-muted font-italic"),
@@ -214,12 +214,12 @@ def win_probability_tab():
     return html.Div(children=[
         dbc.Row(children=[
             dbc.Col(width=3, children=[
-                section_header("플레이어 명"),
+                section_header("플레이어"),
                 dcc.Markdown(className="text-muted",
                              children="어떤 플레이어를 참여시킬건지 선택해주세요."),
                 dbc.Checklist(id="player-options", value=[]),
                 html.Br(),
-                dbc.Button(id="clear-button", children="선택 초기화 하", color="primary")
+                dbc.Button(id="clear-button", children="선택 초기화 하기기", color="primary")
             ]),
 
             dbc.Col(width=9, children=[
