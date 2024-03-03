@@ -93,10 +93,10 @@ def prep_current_ratings_for_dash(
         .merge(win_df, on="player_id", how="left")
         .fillna({"n_wins": 0})
         .rename(columns={
-            "rank": "순위",
-            "player_id": "이름",
-            "n_games": "플레이한 게임 수",
-            "n_wins": "승리 횟수",
+            "rank": "Rank",
+            "player_id": "Name",
+            "n_games": "Games played",
+            "n_wins": "Wins",
             "rating": "Elo Rating",
         })
     )
