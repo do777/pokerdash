@@ -114,13 +114,13 @@ def current_elo_tab():
 def scenario_generator_tab():
     return html.Div([
         dcc.Markdown(children="""
-                     Edit Elo parameters and the game history to see how the Elo ratings would be affected.
+                     elo 파라미터와 게임 기록을 편집하여 elo 레이팅이 어떻게 변하는지 봅니다.
                      """),
 
         dcc.Markdown(className="text-muted",
                      children=f"""
-                     *K* controls how many Elo rating points are gained or lost in a single game. Larger
-                     *K* will result in larger changes after each game. This is a standard Elo parameter.
+                     *K* 한판에 얼마나 많은 elo 레이팅 포인트를 얻거나 잃을지 결정합니다. 값이 큰
+                     *K* 각 게임이 끝난 후 더 많은 elo 레이팅 값을 변하게 합니다. 해당 값이 표준 elo 파라미터입니다.
                      (default = {config.DEFAULT_K_VALUE})
                      """),
 
@@ -216,14 +216,14 @@ def win_probability_tab():
             dbc.Col(width=3, children=[
                 section_header("Player List"),
                 dcc.Markdown(className="text-muted",
-                             children="Select which players will participate."),
+                             children="어떤 플레이어를 참여시킬건지 선택해주세요."),
                 dbc.Checklist(id="player-options", value=[]),
                 html.Br(),
                 dbc.Button(id="clear-button", children="Clear selections", color="primary")
             ]),
 
             dbc.Col(width=9, children=[
-                section_header("Probability of Results"),
+                section_header("결과 예측"),
                 html.Div(id="win-probability-table")
             ])
         ]),
